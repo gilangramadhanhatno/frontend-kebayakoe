@@ -1,0 +1,86 @@
+{
+  "categories": [
+    {
+      "_id": "asd1293uasdads1",
+      "name": "Kebaya",
+      "items": [
+        {
+          "_id": "asd1293uasdads1",
+          "name": "White Pure",
+          "imageUrl": "/images/product/product-1.jpg",
+          "price": 59
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Maxmara",
+          "imageUrl": "/images/product/product-1.jpg",
+          "price": 59
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Soraya Kebaya",
+          "imageUrl": "/images/product/product-1.jpg",
+          "price": 59
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Dhievine Batik",
+          "imageUrl": "/images/product/product-1.jpg",
+          "price": 59
+        }
+      ]
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "name": "Gamis",
+      "items": [
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Sabyan Gamis",
+          "imageUrl": "/images/product/product-1.jpg",
+          "price": 59
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Gamis Brokat",
+          "imageUrl": "/images/product/product-1.jpg",
+          "price": 59
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Gamis Etnic",
+          "imageUrl": "/images/product/product-1.jpg",
+          "price": 59
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Shafiqa Longdress",
+          "imageUrl": "/images/product/product-1.jpg",
+          "price": 59
+        }
+      ]
+    }
+  ],
+  "brand": [
+    {
+      "_id": 1,
+      "name": "Channel",
+      "imageUrl": "images/brands/cc.png"
+    },
+    {
+      "_id": 2,
+      "name": "Nike",
+      "imageUrl": "images/brands/nike.png"
+    },
+    {
+      "_id": 3,
+      "name": "Pull & Bear",
+      "imageUrl": "images/brands/pnb.png"
+    },
+    {
+      "_id": 4,
+      "name": "Uniqlo",
+      "imageUrl": "images/brands/uniqlo.png"
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+/*!
+ * Bootstrap v5.0.1 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "container-grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack
+
+// My SCSS
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+// Navbar/Header
+.brand-text-icon {
+  font-family: "Lora";
+  font-weight: 500;
+  font-size: 28px;
+  color: $primary;
+
+  img {
+    width: 80px;
+    height: 50px;
+  }
+}
+
+header {
+  border-bottom: 1px solid #cccccc;
+  background-color: #f6edea;
+  .navbar {
+    .navbar-nav {
+      li.nav-item {
+        a {
+          &.nav-link {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Hero
+.hero {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 92vh;
+}
+.hero-right {
+  width: 110%;
+  background-color: #e1d3ce;
+  margin-left: -25px;
+  h1 {
+    font-family: "Lora";
+    font-size: 64px;
+    font-weight: 400;
+    color: $primary;
+  }
+  p {
+    color: $primary;
+    opacity: 50%;
+  }
+  .btn {
+    display: inline-block;
+    background-color: #e1d3ce;
+    padding: 8px 20px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: all 300ms;
+    &:hover {
+      background-color: $primary;
+      color: #e1d3ce;
+      transition: all 300ms;
+    }
+  }
+
+  h1,
+  p,
+  .btn {
+    margin-left: 100px;
+  }
+  h1 {
+    padding-top: 100px;
+  }
+}
+
+// masing-masing section
+section {
+  margin-bottom: 70px;
+}
+
+// handle img
+.img-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.img-contain {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+// Categories
+.card {
+  &.bordered {
+    border: 1px solid $gray-300;
+
+    h5 {
+      font-weight: 700;
+      span {
+        font-weight: 400;
+      }
+    }
+    h6 {
+      p {
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #e1d3ce;
+      padding: 8px 20px;
+      color: #000;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 18px;
+      margin-top: 30px;
+      transition: all 300ms;
+      &:hover {
+        background-color: $primary;
+        color: #e1d3ce;
+        transition: all 300ms;
+      }
+    }
+  }
+
+  .img-wrapper {
+    height: 100%;
+    margin-bottom: 0;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: scale(1.1);
+    transition: all 0.25s transfrom ease-in-out;
+  }
+
+  &.card-featured {
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 15px;
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transform: scale(1.1);
+      transition: 0.5s transfrom ease-in-out;
+      z-index: -1;
+    }
+
+    &:hover {
+      &:after {
+        transform: scale(1);
+      }
+      .img-wrapper {
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.meta-wrapper {
+  padding: 0 30%;
+  z-index: 4;
+  transform: translateY(0);
+  transition: 0.3s transform ease-in-out;
+  h5 {
+    color: #000;
+    font-weight: 400;
+    font-size: 1.125rem;
+    transition: all 3s ease-in-out;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    color: #000;
+    font-weight: 700;
+    margin-top: -10px;
+  }
+}
+
+.title-product {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+// brand
+.brand img {
+  object-fit: contain;
+  width: 300px;
+  background-color: rgb(175, 175, 175);
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background-color: #000;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+// footer
+footer {
+  border-top: 1px solid $primary;
+  padding-top: 50px;
+  margin-top: -50px;
+  h6 {
+    font-size: 1.17rem;
+    font-weight: 700;
+  }
+  .brand-tagline {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .list-group-item {
+    border: 0;
+    padding: 0;
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  a,
+  span {
+    color: #606060;
+  }
+  .copyrights {
+    margin: 30px 0;
+    padding-top: 30px;
+    border-top: 1px solid $primary;
+    font-size: 12px;
+    color: #606060;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+// DetailsPage.js
+// Featured
+.featured {
+  .featured-img img {
+    width: 100%;
+    height: 95vh;
+  }
+  .featured-detail {
+    font-family: "Montserrat";
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+}
