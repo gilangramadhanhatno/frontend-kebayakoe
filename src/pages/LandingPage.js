@@ -16,7 +16,7 @@ class LandingPage extends Component {
   }
 
   componentDidMount() {
-    window.title = "GRH | Home";
+    window.title = "KebayaKoe | Home";
     window.scrollTo(0, 0);
 
     if (!this.props.page.landingPage) this.props.fetchPage(`/landing-page`, "landingPage");
