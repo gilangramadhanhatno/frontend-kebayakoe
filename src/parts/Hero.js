@@ -28,7 +28,7 @@ export default function Hero(props) {
               you design a one-of-a-kind outfit
             </p>
             <Button className="btn" onClick={showProduct}>
-              Get It Now
+              Dapatkan Sekarang
             </Button>
           </div>
         </div>

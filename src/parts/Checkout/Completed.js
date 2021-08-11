@@ -7,7 +7,7 @@ export default function Completed() {
       <div className="row justify-content-center text-center">
         <div className="col-4">
           <img src={CompletedIllustration} alt="completed checkout clothing" className="img-fluid" />
-          <p className="text-gray-500">We will inform you via email later once the transaction has been accepted</p>
+          <p className="text-gray-500">Kami akan menginformasikan melalui email nanti setelah transaksi diterima</p>
         </div>
       </div>
     </div>

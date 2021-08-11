@@ -73,7 +73,7 @@ class Checkout extends Component {
               Pilih Design Pakaian Dulu
               <div>
                 <Button className="btn mt-5" type="button" onClick={() => this.props.history.goBack()} isPrimary>
-                  Back
+                  Kembali
                 </Button>
               </div>
             </div>
@@ -83,17 +83,17 @@ class Checkout extends Component {
 
     const steps = {
       bookingInformation: {
-        title: "Booking Information",
-        description: "Please fill up the blank fields below",
+        title: "Informasi Pemesanan",
+        description: "Silahkan isi kolom kosong di bawah ini",
         content: <BookingInformation data={data} checkout={checkout} ItemDetails={page[checkout._id]} onChange={this.onChange} />,
       },
       payment: {
-        title: "Payment",
-        description: "Kindly follow the instructions below",
+        title: "Pembayaran",
+        description: "Silakan ikuti petunjuk di bawah ini",
         content: <Payment data={data} checkout={checkout} ItemDetails={page[checkout._id]} onChange={this.onChange} />,
       },
       completed: {
-        title: "Yeay, Completed",
+        title: "Yeay, Selesai",
         description: null,
         content: <Completed />,
       },
@@ -115,11 +115,11 @@ class Checkout extends Component {
                   <Controller>
                     {data.firstName !== "" && data.lastName !== "" && data.email !== "" && data.phone !== "" && (
                       <Button className="btn mb-3" type="button" isBlock isPrimary hasShadow onClick={nextStep}>
-                        Continue to Book
+                        Lanjutkan untuk Memesan
                       </Button>
                     )}
                     <Button className="btn" type="button" isBlock isLight onClick={() => this.props.history.goBack()}>
-                      Cancel
+                      Batal
                     </Button>
                   </Controller>
                 )}
@@ -128,11 +128,11 @@ class Checkout extends Component {
                   <Controller>
                     {data.proofPayment !== "" && data.bankName !== "" && data.bankHolder !== "" && (
                       <Button className="btn mb-3" type="button" isBlock isPrimary hasShadow onClick={() => this._Submit(nextStep)}>
-                        Continue to Book
+                        Lanjutkan untuk Memesan
                       </Button>
                     )}
                     <Button className="btn" type="button" isBlock isLight onClick={prevStep}>
-                      Cancel
+                      Batal
                     </Button>
                   </Controller>
                 )}
@@ -140,7 +140,7 @@ class Checkout extends Component {
                 {CurrentStep === "completed" && (
                   <Controller>
                     <Button className="btn" type="link" isBlock isPrimary hasShadow href="">
-                      Back to Home
+                      Kembali ke halaman Home
                     </Button>
                   </Controller>
                 )}

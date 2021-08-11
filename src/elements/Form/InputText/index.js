@@ -54,7 +54,7 @@ export default function Text(props) {
 Text.defaultProps = {
   type: "text",
   pattern: "",
-  placeholder: "Please type here...",
+  placeholder: "Silahkan ketik disini...",
   errorResponse: "Please match the requested format.",
 };
 

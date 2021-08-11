@@ -23,7 +23,7 @@ export default function Categories({ data }) {
                 <div className="meta-wrapper text-center mt-3">
                   <Button type="link" className="d-block text-white" href={`/details/${item._id}`}>
                     <h5>{item.title}</h5>
-                    <p>${item.price}</p>
+                    <p>Rp{item.price}</p>
                   </Button>
                 </div>
               </div>

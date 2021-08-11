@@ -52,10 +52,10 @@ class BookingForm extends Component {
 
     return (
       <div className="form-booking card bordered" style={{ padding: "60px 80px" }}>
-        <h3 className="mb-3">Start Booking</h3>
+        <h3 className="mb-3">Mulai Pemesanan</h3>
         <h4 className="mt-3">{itemDetails.title}</h4>
         <h5 className="h2 price mb-4 font-weight-bold">
-          ${itemDetails.price} <span className="font-weight-light">per Baju</span>
+          Rp{itemDetails.price} <span className="font-weight-light">per Baju</span>
         </h5>
 
         <label htmlFor="selectBahan">Pilih Bahan</label>
@@ -73,16 +73,12 @@ class BookingForm extends Component {
 
         <h6 className="" style={{ marginBottom: 10 }}>
           Yang Harus Kamu Bayar:
-          <p>
-            DP: ${itemDetails.price * data.buy * (50 / 100)} <span>USD</span>
-          </p>
-          <p>
-            Bayar Full: ${itemDetails.price * data.buy} <span>USD</span>
-          </p>
+          <p>DP: Rp{itemDetails.price * data.buy * (50 / 100)}</p>
+          <p>Bayar Full: Rp{itemDetails.price * data.buy}</p>
         </h6>
 
         <Button className="btn" onClick={this.startBooking}>
-          Continue to Book
+          Lanjutkan Untuk Memesan
         </Button>
       </div>
     );
