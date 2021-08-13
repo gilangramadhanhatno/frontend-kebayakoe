@@ -9,7 +9,7 @@ import BookingInformation from "parts/Checkout/BookingInformation";
 import Payment from "parts/Checkout/Payment";
 import Completed from "parts/Checkout/Completed";
 
-import ItemDetails from "json/itemDetails.json";
+// import ItemDetails from "json/itemDetails.json";
 
 import { submitBooking } from "store/actions/checkout";
 
@@ -48,7 +48,7 @@ class Checkout extends Component {
     payload.append("lastName", data.lastName);
     payload.append("email", data.email);
     payload.append("phoneNumber", data.phone);
-    payload.append("itemId", checkout._id);
+    payload.append("idItem", checkout._id);
     payload.append("buy", checkout.buy);
     payload.append("bookingSelectDate", checkout.date.selectDate);
     payload.append("accountHolder", data.bankHolder);
