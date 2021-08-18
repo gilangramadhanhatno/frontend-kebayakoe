@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
                 <Button type="link" href="/tel:+6281210657874">
-                  0812 - 1065 - 7874
+                  0877 - 3629 - 0538
                 </Button>
               </li>
               <li className="list-group-item">
@@ -72,7 +72,7 @@ export default function Footer() {
                 </Button>
               </li>
               <li className="list-group-item">
-                <span>Jln. Gotong Royong ||| No.41 Rt012/006 Kebayoran Baru Jakarta, Indonesia</span>
+                <span>Jln. Bintaro Utama 3A No.11 Pd Karya Kec. Pondok Aren Tangerang Selatan, Banten, Indonesia</span>
               </li>
             </ul>
           </div>
