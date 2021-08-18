@@ -77,6 +77,11 @@ class BookingForm extends Component {
           <p>Bayar Full: Rp{itemDetails.price * data.buy}</p>
         </h6>
 
+        <label for="catatan" className="form-label">
+          Catatan:
+        </label>
+        <textarea className="form-control"></textarea>
+
         <Button className="btn" onClick={this.startBooking}>
           Lanjutkan Untuk Memesan
         </Button>
